@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEVIS
+    – BY KWALI-E WEBSITE</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Import iceland font -->
+  <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Iceland', sans-serif;
+      color: #1D1C1C;
+      /* your default text color */
+    }
+  </style>
+
+</head>
+
+<body class="text-gray-900">
+
+<!-- Info Bar -->
+<div class="hidden lg:flex bg-white text-sm py-3 px-4 items-center border-b border-gray-700">
+
+  <!-- Left Spacer -->
+  <div class="flex-1"></div>
+
+  <!-- Center -->
+  <div class="flex-1 text-center text-xs uppercase">
+    <span id="prev" class="mr-12 cursor-pointer hover:text-gray-400 transition text-lg">&lt;</span>
+    <span id="adText" class="uppercase">
+      free express shipping* & return policy <span class="border-b border-gray-700">details</span>
+    </span>
+    <span id="next" class="ml-12 cursor-pointer hover:text-gray-400 transition text-lg">&gt;</span>
+  </div>
+
+  <!-- Right -->
+  <div class="flex-1 flex items-center justify-end space-x-4">
+    <!-- User Icon -->
+    <div class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A8.966 8.966 0 0112 15c2.21 0 4.21.803 5.879 2.121M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+      </svg>
+    </div>
+
+    <!-- Join Now -->
+    <span class="cursor-pointer hover:text-gray-400 transition">Join Now</span>
+
+    <!-- UK Flag + Text -->
+    <div class="flex items-center space-x-2">
+      <img src="https://flagcdn.com/w20/gb.png" alt="UK Flag" class="w-5 h-3">
+      <span>United Kingdom</span>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+ <!-- Header -->
+<header class="flex justify-between items-center px-4 lg:px-10 py-4 bg-white shadow-md sticky top-0 z-50">
+
+  <!-- Left: Logo + Categories -->
+  <div class="flex items-center space-x-8">
+    <!-- Logo -->
+    <div class="uppercase font-bold text-2xl tracking-wide">LEVIS</div>
+
+    <!-- Categories -->
+    <nav class="hidden lg:flex space-x-6 text-sm font-medium uppercase">
+      <a href="#" class="hover:text-gray-500">Men</a>
+      <a href="#" class="hover:text-gray-500">Women</a>
+      <a href="#" class="hover:text-gray-500">Kids</a>
+      <a href="#" class="text-blue-600 hover:text-blue-800">Blue Tag</a>
+    </nav>
+  </div>
+
+  <!-- Right: Search + Icons -->
+  <div class="flex items-center space-x-6">
+    <!-- Search -->
+    <div class="hidden lg:flex items-center border border-gray-400 rounded-md overflow-hidden max-w-xs w-64">
+      <input type="text" placeholder="What are you looking for?"
+        class="flex-1 bg-transparent border-none focus:outline-none px-3 py-1 text-sm placeholder-gray-500" />
+      <button type="button" class="px-3 text-gray-600 hover:text-black">
+        <i data-lucide="search" class="w-4 h-4"></i>
+      </button>
+    </div>
+
+    <!-- Heart -->
+    <a href="#wishlist" class="hover:text-gray-500">
+      <i data-lucide="heart" class="w-5 h-5"></i>
+    </a>
+
+    <!-- Cart / Bag -->
+    <a href="#cart" class="hover:text-gray-500">
+      <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+    </a>
+  </div>
+
+</header>
+
+  <!-- Mobile Nav -->
+  <nav id="mobile-menu"
+    class="lg:hidden fixed inset-0 bg-white transform -translate-y-full transition-transform duration-300 z-50">
+    <div class="flex justify-end p-6">
+      <button id="close-menu">
+        <i data-lucide="x" class="w-7 h-7"></i>
+      </button>
+    </div>
+    <ul class="flex flex-col items-center justify-center h-full space-y-6 uppercase text-2xl">
+      <li><a href="#new" class="hover:text-gray-500">New Heights</a></li>
+      <li><a href="#featured" class="hover:text-gray-500">Featured</a></li>
+      <li><a href="#clothing" class="hover:text-gray-500">Clothing</a></li>
+      <li><a href="#footwear" class="hover:text-gray-500">Footwear</a></li>
+      <li><a href="#accessories" class="hover:text-gray-500">Accessories</a></li>
+    </ul>
+  </nav>
+
+  <!-- Gg images section -->
+  <div class="relative w-full h-[500px] scroll-animate opacity-0 translate-y-10 transition-all duration-[1000ms] ease-out">
+
+  <!-- Background Images (Grid with 2 images) -->
+  <div class="grid grid-cols-2 w-full h-full">
+    <div class="relative w-full h-full">
+      <img src="./img/top-1.jfif" alt="Banner Men"
+           class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105 z-0">
+    </div>
+
+    <div class="relative w-full h-full">
+      <img src="./img/19.jfif" alt="Banner Women"
+           class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105 z-0">
+    </div>
+  </div>
+
+  <!-- Dark Overlay (covers both images) -->
+  <div class="absolute inset-0 bg-black/40 z-20 pointer-events-none"></div>
+
+  <!-- Example centered content on top of overlay -->
+  <div class="absolute inset-0 z-30 flex items-center justify-center">
+    <div class="text-center text-white px-6">
+      <h2 class="text-2xl font-bold uppercase">Full Circle: Lucy Williams x Missoma</h2>
+      <p class="mt-2">Celebrating 10 years of our iconic partnership.</p>
+      <div class="mt-4 flex gap-4 justify-center">
+        <button class="bg-transparent border border-white text-white px-6 py-2 uppercase hover:bg-white hover:text-black transition">Shop Men</button>
+        <button class="bg-transparent border border-white text-white px-6 py-2 uppercase hover:bg-white hover:text-black transition">Shop Women</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+  <!-- Category Section -->
+ <section class="my-10">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
+
+    <!-- Item 1 -->
+    <div class="relative h-[400px] overflow-hidden group cursor-pointer 
+           scroll-animate opacity-0 translate-y-10 transition-all duration-[1000ms] ease-out">
+      <img src="./img/12.jfif" alt="Earrings"
+        class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105">
+      <!-- Subtle Black Overlay -->
+      <div class="absolute inset-0 bg-black/30"></div>
+      <div class="absolute inset-0 flex items-end justify-center pb-6">
+        <h2 class="text-white text-lg capitalize font-semibold transition-all duration-300 
+                 group-hover:underline group-hover:-translate-y-2">
+          Shop now
+        </h2>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="relative h-[400px] overflow-hidden group cursor-pointer 
+           scroll-animate opacity-0 translate-y-10 transition-all duration-[1000ms] ease-out">
+      <img src="./img/13.jfif" alt="Necklaces"
+        class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105">
+      <div class="absolute inset-0 bg-black/30"></div>
+      <div class="absolute inset-0 flex items-end justify-center pb-6">
+        <h2 class="text-white text-lg capitalize font-semibold transition-all duration-300 
+                 group-hover:underline group-hover:-translate-y-2">
+          Shop now
+        </h2>
+      </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="relative h-[400px] overflow-hidden group cursor-pointer 
+           scroll-animate opacity-0 translate-y-10 transition-all duration-[1000ms] ease-out">
+      <img src="./img/8.webp" alt="Bracelets"
+        class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105">
+      <div class="absolute inset-0 bg-black/30"></div>
+      <div class="absolute inset-0 flex items-end justify-center pb-6">
+        <h2 class="text-white text-lg capitalize font-semibold transition-all duration-300 
+                 group-hover:underline group-hover:-translate-y-2">
+          Shop now
+        </h2>
+      </div>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="relative h-[400px] overflow-hidden group cursor-pointer 
+           scroll-animate opacity-0 translate-y-10 transition-all duration-[1000ms] ease-out">
+      <img src="./img/top-3.jfif" alt="Top 30"
+        class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105">
+      <div class="absolute inset-0 bg-black/30"></div>
+      <div class="absolute inset-0 flex items-end justify-center pb-6">
+        <h2 class="text-white text-lg capitalize font-semibold transition-all duration-300 
+                 group-hover:underline group-hover:-translate-y-2">
+          Shop now
+        </h2>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <div class="max-w-[1440px] w-full mx-auto px-2 lg:px-10">
+
+    <!-- 3 Category Section -->
+    <section class="grid grid-cols-1 lg:grid-cols-3 gap-2 my-10 ">
+
+      <!-- Item 1 -->
+      <div
+        class="relative h-[500px] overflow-hidden group cursor-pointer scroll-animate opacity-0 translate-y-10 transition-all duration-[1000ms] ease-out">
+        <!-- Image -->
+        <img src="./img/15.jfif" alt="Product 1"
+          class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105">
+
+        <!-- Dark overlay -->
+        <div class="absolute inset-0 bg-black/40"></div>
+
+        <!-- Text + Button -->
+        <div class="absolute inset-0 flex flex-col items-center justify-end pb-10">
+          <h2
+            class="text-white text-xl lg:text-2xl font-semibold uppercase opacity-0 translate-y-5 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0">
+                   Street Luxe Essentials
+
+          </h2>
+          <button
+            class="mt-3 bg-black text-white uppercase text-sm px-12 py-2 rounded opacity-0 translate-y-5 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0 delay-100">
+            shop now
+          </button>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div
+        class="relative h-[500px] overflow-hidden group cursor-pointer scroll-animate opacity-0 translate-y-10 transition-all duration-[1000ms] ease-out">
+        <!-- Image -->
+        <img src="./img/16.jfif" alt="Product 2"
+          class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105">
+
+        <!-- Dark overlay -->
+        <div class="absolute inset-0 bg-black/40"></div>
+
+        <!-- Text + Button -->
+        <div class="absolute inset-0 flex flex-col items-center justify-end pb-10">
+          <h2
+            class="text-white text-xl lg:text-2xl font-semibold uppercase opacity-0 translate-y-5 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0">
+            matching sets
+          </h2>
+          <button
+            class="mt-3 bg-black text-white uppercase text-sm px-12 py-2 rounded opacity-0 translate-y-5 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0 delay-100">
+            shop now
+          </button>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div
+        class="relative h-[500px] overflow-hidden group cursor-pointer scroll-animate opacity-0 translate-y-10 transition-all duration-[1000ms] ease-out">
+        <!-- Image -->
+        <img src="./img/17.jfif" alt="Product 3"
+          class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105">
+
+        <!-- Dark overlay -->
+        <div class="absolute inset-0 bg-black/40"></div>
+
+        <!-- Text + Button -->
+        <div class="absolute inset-0 flex flex-col items-center justify-end pb-10">
+          <h2
+            class="text-white text-xl lg:text-2xl font-semibold uppercase opacity-0 translate-y-5 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0">
+            urban styles
+          </h2>
+          <button
+            class="mt-3 bg-black text-white uppercase text-sm px-12 py-2 rounded opacity-0 translate-y-5 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0 delay-100">
+            shop now
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+<section class="grid grid-cols-1 lg:grid-cols-2 my-10 scroll-animate opacity-0 translate-y-10 transition-all duration-[1000ms] ease-out">
+  <!-- Left Image -->
+  <div class="h-[500px]">
+    <img src="./img/3.webp" alt="Beyoncé x Levi’s"
+      class="w-full h-full object-cover">
+  </div>
+
+  <!-- Right Content -->
+  <div class="flex items-center justify-center bg-white h-[500px]">
+    <div class="text-center px-6">
+      <h2 class="text-3xl lg:text-4xl font-bold uppercase">BEYONCÉ X LEVI’S®</h2>
+      <p class="mt-3 text-lg text-gray-700">Iconic denim, reimagined.</p>
+      <button
+        class="mt-6 text-black uppercase text-sm font-medium border-b-2 border-red-600 pb-1">
+        Shop the Collection
+      </button>
+    </div>
+  </div>
+</section>
+
+
+    <!-- line divider -->
+    <div class="border-t border-gray-600 my-4 lg:my-8"></div>
+
+<section class="relative w-full h-[500px] my-10 scroll-animate opacity-0 translate-y-10 transition-all duration-[1000ms] ease-out">
+  <!-- Background Image -->
+  <img src="./img/banner.webp" alt="Levi's Jeans Guide"
+
+    class="w-full h-full object-cover">
+
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <!-- Centered Content -->
+  <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+    <p class="text-base lg:text-lg mb-2">DISCOVER THE DETAILS OF EVERY FIT.</p>
+    <h2 class="text-3xl lg:text-5xl font-bold mb-3">The Levi's® Jeans Guide</h2>
+    <p class="text-base lg:text-lg max-w-xl">
+      Here, we breakdown exactly what makes each fit unique.
+    </p>
+    <div class="mt-6 flex gap-4">
+      <button class="bg-white text-black uppercase text-sm px-6 py-2 hover:bg-gray-100 transition">
+        Fit Guide Men
+      </button>
+      <button class="bg-white text-black uppercase text-sm px-6 py-2 hover:bg-gray-100 transition">
+        Fit Guide Women
+      </button>
+    </div>
+  </div>
+</section>
+
+   <!-- New Arrivals -->
+<section
+  class="mx-auto px-4 py-12 scroll-animate opacity-0 translate-y-10 transition-all duration-[1000ms] ease-out">
+  <h2 class="text-2xl lg:text-3xl font-semibold text-center mb-8 uppercase">New Arrivals</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2">
+    
+    <!-- Item 1 -->
+    <article class="group text-center">
+      <div class="overflow-hidden bg-gray-100 h-[350px] flex items-center justify-center">
+        <img src="./img/top-2.jfif" alt="Oversized Black Sweatpants"
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+      <h3 class="mt-3 text-sm font-semibold">Oversized Black Sweatpants</h3>
+      <p class="text-sm text-gray-500">$95.00</p>
+    </article>
+
+    <!-- Item 2 -->
+    <article class="group text-center">
+      <div class="overflow-hidden bg-gray-100 h-[350px] flex items-center justify-center">
+        <img src="./img/20.jfif" alt="Brown Matching Set"
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+      <h3 class="mt-3 text-sm font-semibold">Brown Matching Set</h3>
+      <p class="text-sm text-gray-500">$120.00</p>
+    </article>
+
+    <!-- Item 3 -->
+    <article class="group text-center">
+      <div class="overflow-hidden bg-gray-100 h-[350px] flex items-center justify-center">
+        <img src="./img/21.jfif" alt="Denim Cap & Baggy Jeans"
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+      <h3 class="mt-3 text-sm font-semibold">Denim Cap & Baggy Jeans</h3>
+      <p class="text-sm text-gray-500">$150.00</p>
+    </article>
+
+    <!-- Item 4 -->
+    <article class="group text-center">
+      <div class="overflow-hidden bg-gray-100 h-[350px] flex items-center justify-center">
+        <img src="./img/22.jfif" alt="Minimalist Half Shirt"
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+      <h3 class="mt-3 text-sm font-semibold">Minimalist Half Shirt</h3>
+      <p class="text-sm text-gray-500">$80.00</p>
+    </article>
+
+    <!-- Item 5 -->
+    <article class="group text-center">
+      <div class="overflow-hidden bg-gray-100 h-[350px] flex items-center justify-center">
+        <img src="./img/23.jfif" alt="Casual Streetwear Hoodie"
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+      <h3 class="mt-3 text-sm font-semibold">Casual Streetwear Hoodie</h3>
+      <p class="text-sm text-gray-500">$110.00</p>
+    </article>
+
+  </div>
+</section>
+
+</div>
+  
+
+  <!-- Footer Section -->
+  <footer class="bg-black text-white mt-[100px]">
+
+    <!-- Footer Links -->
+    <div
+      class="max-w-7xl mx-auto px-6 lg:px-20 py-12 grid grid-cols-2 md:grid-cols-4 gap-8 scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+
+      <!-- SERVICE -->
+      <div>
+        <h3 class="uppercase text-gray-400 text-sm mb-4">Service</h3>
+        <ul class="space-y-2 text-xs">
+          <li>FAQ</li>
+          <li>Payment</li>
+          <li>Delivery</li>
+          <li>Returns</li>
+          <li>CPO Warranty</li>
+        </ul>
+      </div>
+
+      <!-- ABOUT -->
+      <div>
+        <h3 class="uppercase text-gray-400 text-sm mb-4">About</h3>
+        <ul class="space-y-2 text-xs">
+          <li>Values</li>
+          <li>Bucherer World</li>
+          <li>Press</li>
+          <li>Code of Conduct</li>
+          <li>Careers</li>
+          <li>Responsible Sourcing</li>
+        </ul>
+      </div>
+
+      <!-- LEGAL & PRIVACY -->
+      <div>
+        <h3 class="uppercase text-gray-400 text-sm mb-4">Legal & Privacy</h3>
+        <ul class="space-y-2 text-xs">
+          <li>Terms & Conditions</li>
+          <li>Terms of Use</li>
+          <li>Privacy Policy</li>
+          <li>Imprint</li>
+          <li>Accessibility Statement</li>
+          <li>Cookie Guidelines</li>
+          <li>Cookie Settings</li>
+          <li>GTC Purchase of Pre-Owned Watches</li>
+        </ul>
+      </div>
+
+      <!-- CUSTOMER SERVICE -->
+      <div>
+        <h3 class="uppercase text-gray-400 text-sm mb-4">Customer Service</h3>
+        <ul class="space-y-2 text-xs">
+          <li>Mon - Fri 09:00 - 18:00, Sat 09:00 - 17:00</li>
+          <li>+41 41 369 79 79</li>
+          <li>Contact</li>
+          <li>Appointments</li>
+          <li>Whatsapp</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Socials & Language Row -->
+    <div
+      class="max-w-7xl mx-auto px-6 lg:px-20 flex flex-col md:flex-row justify-between items-center text-xs space-y-4 md:space-y-0 scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+
+      <!-- Language -->
+      <div class="flex items-center space-x-2">
+        <span class="text-lg">🌐</span>
+        <span>ENGLISH / SWITZERLAND</span>
+      </div>
+
+      <!-- Social Icons (Lucide) -->
+      <div class="flex space-x-5 text-lg">
+        <button aria-label="Facebook" class="text-gray-400 hover:text-white transition">
+          <i data-lucide="facebook" class="w-5 h-5"></i>
+        </button>
+
+        <button aria-label="Instagram" class="text-gray-400 hover:text-white transition">
+          <i data-lucide="instagram" class="w-5 h-5"></i>
+        </button>
+
+        <button aria-label="LinkedIn" class="text-gray-400 hover:text-white transition">
+          <i data-lucide="linkedin" class="w-5 h-5"></i>
+        </button>
+
+        <button aria-label="YouTube" class="text-gray-400 hover:text-white transition">
+          <i data-lucide="youtube" class="w-5 h-5"></i>
+        </button>
+
+        <button aria-label="Pinterest" class="text-gray-400 hover:text-white transition">
+          <i data-lucide="pinterest" class="w-5 h-5"></i>
+        </button>
+
+        <button aria-label="WhatsApp" class="text-gray-400 hover:text-white transition">
+          <i data-lucide="whatsapp" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+
+      <!-- Copyright -->
+      <div>
+        © 2025
+      </div>
+    </div>
+    </div>
+
+    <!-- Trademark with Gradient & Build Day -->
+    <div class="border-t border-gray-700 mt-6">
+      <p class="mx-auto max-w-fit py-6 text-xs uppercase tracking-widest">
+        <span class="text-gray-400">MISSOMA
+          Crafted by</span>
+        <span class=" ml-2 bg-clip-text text-transparent bg-gradient-to-r from-gray-700 via-red-600 to-yellow-500
+                      font-semibold">
+          KWALI-E WEBSITE
+        </span>
+        <span class="text-gray-500 ml-2">© 2025 · Build Day 6</span>
+      </p>
+    </div>
+
+
+  </footer>
+
+  <!-- Lucide -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Render icons first
+      lucide.createIcons();
+
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const elements = document.querySelectorAll(".scroll-animate");
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove("opacity-0", "translate-y-10");
+            entry.target.classList.add("opacity-100", "translate-y-0", "transition-all", "duration-[2000ms]", "ease-out");
+          }
+        });
+      }, { threshold: 0.2 });
+
+      elements.forEach(el => observer.observe(el));
+    });
+  </script>
+
+
+
+</body>
+
+</html>
